@@ -22,8 +22,8 @@ class MyInfo extends StatelessWidget {
       ),
       backgroundColor: Colors.teal[600],
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
+        //crossAxisAlignment: CrossAxisAlignment.center,
+        //mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           CircleAvatar(
             backgroundImage: AssetImage('images/Harmanjit.png'),
@@ -47,6 +47,55 @@ class MyInfo extends StatelessWidget {
                   fontFamily: 'OpenSans',
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold),
+            ),
+          ),
+          SizedBox(
+            height: 15,
+          ),
+          Card(
+            margin: EdgeInsets.symmetric(horizontal: 25),
+            color: Colors.teal[100],
+            child: Row(
+              children: <Widget>[
+                Icon(
+                  Icons.call,
+                  size: 30.0,
+                  color: Colors.teal[900],
+                ),
+                SizedBox(
+                  width: 10.0,
+                ),
+                Text(
+                  '+91 9646******',
+                  style: TextStyle(
+                      color: Colors.teal[900],
+                      fontSize: 25.0,
+                      fontFamily: 'OpenSans'),
+                )
+              ],
+            ),
+          ),
+          Card(
+            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25.0),
+            color: Colors.teal[100],
+            child: Row(
+              children: <Widget>[
+                Icon(
+                  Icons.mail,
+                  size: 30.0,
+                  color: Colors.teal[900],
+                ),
+                SizedBox(
+                  width: 10.0,
+                ),
+                Text(
+                  'harmanjit140500@gmail.com',
+                  style: TextStyle(
+                      color: Colors.teal[900],
+                      fontSize: 20.0,
+                      fontFamily: 'OpenSans'),
+                )
+              ],
             ),
           ),
         ],
